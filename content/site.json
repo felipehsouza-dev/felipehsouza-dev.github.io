@@ -1,0 +1,50 @@
+{
+  "_todo": [
+    "TODO: confirmar a URL final do site (site_url). Se o repositório se chamar felipehsouza-dev.github.io, a URL é a raiz; se for outro nome, acrescente /nome-do-repo."
+  ],
+  "site_url": "https://felipehsouza-dev.github.io",
+  "idioma": "pt-BR",
+  "nome": "Felipe H. Souza",
+  "titulo_pagina": "Felipe H. Souza · Agentes de IA, automação e dados em Python",
+  "descricao": "Portfólio de Felipe H. Souza, desenvolvedor Python focado em agentes de IA, automação e dashboards de dados.",
+  "posicionamento": "Construo agentes de IA que consultam dados de negócio com segurança: tools testadas, validações claras e respostas que o usuário entende.",
+  "sobre": "Atuo como PJ/MEI no suporte técnico da CTA Sistemas, empresa de ERP de distribuição, e desenvolvo em Python. Hoje meu foco é agentes de IA, automação e dashboards de dados.",
+  "avatar": {
+    "arquivo": "img/felipe.jpg",
+    "alt": "Foto de Felipe H. Souza"
+  },
+  "focos": ["Agentes de IA", "Tools para LLM", "Automação", "Dashboards de dados", "Python"],
+  "contatos": {
+    "github": "https://github.com/felipehsouza-dev",
+    "linkedin": "https://www.linkedin.com/in/felipe-h-souza/",
+    "email": "felipehsouza006@gmail.com"
+  },
+  "como_trabalho": [
+    {
+      "titulo": "Agentes com tools pequenas e bem definidas",
+      "texto": "Cada tool faz uma coisa: consultar, totalizar, comparar ou sugerir. O agente escolhe a tool certa e eu controlo o que ela pode acessar."
+    },
+    {
+      "titulo": "Testes antes de conectar no dado real",
+      "texto": "Escrevo testes automatizados contra uma API simulada. Assim valido paginação, agregações e erros sem depender do ambiente de produção."
+    },
+    {
+      "titulo": "Erros que a IA consegue interpretar",
+      "texto": "As mensagens de erro descrevem o problema e o próximo passo, sem termos técnicos. O agente repassa ao usuário algo útil em vez de um stack trace."
+    },
+    {
+      "titulo": "Validações de segurança na entrada",
+      "texto": "Limites explícitos, como período máximo de consulta, e regras de escrita apenas em pastas autorizadas. A IA não decide sozinha o que é permitido."
+    },
+    {
+      "titulo": "Prompt e contexto enxutos",
+      "texto": "Organizo bases de conhecimento e prompts para reduzir tokens sem perder o que o agente precisa saber."
+    }
+  ],
+  "stack": [
+    { "grupo": "Linguagens", "itens": ["Python", "JavaScript (extensões MV3)"] },
+    { "grupo": "Dados", "itens": ["pandas", "Dash", "Plotly", "Parquet"] },
+    { "grupo": "Integração e automação", "itens": ["requests", "Playwright"] },
+    { "grupo": "IA e conhecimento", "itens": ["Claude", "Obsidian"] }
+  ]
+}

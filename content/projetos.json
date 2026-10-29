@@ -1,0 +1,129 @@
+{
+  "_como_editar": "Cada item vira um card e uma página própria (/projetos/<slug>/). status: concluido | em-teste | em-andamento | planejado. destaque: true aparece nos cards grandes (use até 3). publicar: false esconde o projeto do site.",
+  "projetos": [
+    {
+      "slug": "skill-sellout-agente-ia",
+      "titulo": "Skill de consulta de sellout para agente de IA",
+      "publicar": true,
+      "destaque": true,
+      "categoria": "IA",
+      "status": "concluido",
+      "_todo": [
+        "TODO [confirmar]: status 'concluido' está correto?"
+      ],
+      "resumo": "Conjunto de tools em Python para um agente de IA consultar dados de vendas com segurança e responder em linguagem simples.",
+      "problema": "Usuários precisavam de respostas sobre vendas (por cliente, produto, vendedor, rentabilidade) sem montar relatórios manualmente. O agente de IA precisava de ferramentas confiáveis para buscar e agregar esses dados.",
+      "construi": [
+        "Tools para consulta genérica, financeira, por cliente, por produto e por vendedor.",
+        "Tools de totalização, rentabilidade e sugestões de produto para o cliente.",
+        "Paginação com busca paralela usando ThreadPoolExecutor.",
+        "Validação de período, com limite de 31 dias por consulta.",
+        "Tratamento de erros com mensagens sem termos técnicos, que o agente repassa ao usuário.",
+        "Agregações feitas em Python a partir dos dados paginados."
+      ],
+      "tecnologias": ["Python", "ThreadPoolExecutor", "Agentes de IA", "Testes automatizados"],
+      "resultado": "32 testes automatizados rodando contra uma API simulada.",
+      "contexto": "Projeto desenvolvido na CTA Sistemas (ERP de distribuição), onde atuo como PJ. Endpoints, credenciais, nomes de clientes e dados de venda não são divulgados."
+    },
+    {
+      "slug": "agentes-suporte-base-conhecimento",
+      "titulo": "Agentes de suporte com base de conhecimento",
+      "publicar": true,
+      "destaque": true,
+      "categoria": "IA",
+      "status": "concluido",
+      "_todo": [
+        "TODO [confirmar]: o que posso detalhar deste projeto? Texto mantido em nível geral.",
+        "TODO [confirmar]: status 'concluido' está correto?"
+      ],
+      "resumo": "Prompts e bases de conhecimento otimizados para agentes de suporte técnico de cloud.",
+      "problema": "Agentes de suporte precisam responder com precisão usando uma base de conhecimento, sem gastar tokens com contexto desnecessário.",
+      "construi": [
+        "Otimização dos prompts dos agentes de suporte.",
+        "Estruturação da base de conhecimento para facilitar a consulta pelo agente.",
+        "Redução de tokens no contexto enviado ao modelo."
+      ],
+      "tecnologias": ["Engenharia de prompt", "Bases de conhecimento", "Agentes de IA"],
+      "resultado": "",
+      "contexto": "Descrito em nível geral por confidencialidade."
+    },
+    {
+      "slug": "segundo-cerebro-obsidian-claude",
+      "titulo": "Segundo Cérebro com Obsidian e Claude",
+      "publicar": true,
+      "destaque": true,
+      "categoria": "IA",
+      "status": "concluido",
+      "_todo": ["TODO [confirmar]: status 'concluido' está correto?"],
+      "resumo": "Sistema de notas conectado a um vault Obsidian, com rotina diária automatizada e escrita restrita a uma pasta autorizada.",
+      "problema": "Manter notas organizadas e conectadas dá trabalho manual todos os dias, e uma IA com acesso ao vault não deve poder escrever em qualquer lugar.",
+      "construi": [
+        "Rotina diária automatizada de abertura e fechamento do dia.",
+        "Resumos por assunto gerados a partir das notas.",
+        "Criação de links entre notas relacionadas.",
+        "Regra que só permite escrita em uma pasta autorizada."
+      ],
+      "tecnologias": ["Claude", "Obsidian", "Markdown"],
+      "resultado": "",
+      "contexto": ""
+    },
+    {
+      "slug": "dashboard-dre",
+      "titulo": "Dashboard DRE",
+      "publicar": true,
+      "destaque": false,
+      "categoria": "Dados",
+      "status": "concluido",
+      "_todo": ["TODO [confirmar]: status 'concluido' está correto?"],
+      "resumo": "Dashboard financeiro com motor de DRE, mapeamento multi-cliente e gráfico em cascata.",
+      "problema": "Montar a DRE de clientes diferentes exige mapear planos de contas distintos para uma estrutura única e visualizar o resultado de forma clara.",
+      "construi": [
+        "Motor de cálculo da DRE.",
+        "Mapeamento multi-cliente das contas para a estrutura da DRE.",
+        "Pipeline de dados em Parquet.",
+        "Gráfico em cascata (waterfall) do resultado."
+      ],
+      "tecnologias": ["Python", "Dash", "Plotly", "Parquet"],
+      "resultado": "",
+      "contexto": "Qualquer tela mostrada usa dados fictícios."
+    },
+    {
+      "slug": "mods-para-o-claude",
+      "titulo": "Mods para o Claude",
+      "publicar": true,
+      "destaque": false,
+      "categoria": "IA",
+      "status": "concluido",
+      "_todo": ["TODO [confirmar]: status 'concluido' está correto?"],
+      "resumo": "Extensões do comportamento do Claude, como uma trava que impede escrita fora de uma pasta autorizada.",
+      "problema": "Um assistente de IA com acesso a arquivos precisa de limites que ele mesmo não consiga ignorar.",
+      "construi": [
+        "Trava que bloqueia escrita fora de uma pasta autorizada.",
+        "Liberação da trava apenas por comando explícito do usuário."
+      ],
+      "tecnologias": ["Claude"],
+      "resultado": "",
+      "contexto": ""
+    },
+    {
+      "slug": "pokeidle-hunts",
+      "titulo": "PokéIdle Hunts",
+      "publicar": true,
+      "destaque": false,
+      "categoria": "Automação",
+      "status": "em-teste",
+      "_todo": [],
+      "resumo": "Extensão Chrome somente leitura que lê os dados do jogo e ranqueia os melhores lugares para farmar.",
+      "problema": "Escolher onde farmar exige comparar XP e ouro por hora entre várias hunts, e estimar quantas tentativas um drop de boss pode levar.",
+      "construi": [
+        "Ranking de hunts por XP/h e ouro/h.",
+        "Calculadora de drop de boss com binomial negativa exata.",
+        "Leitura do painel analisador do jogo.",
+        "Funcionamento somente leitura: a extensão não executa ações no jogo."
+      ],
+      "tecnologias": ["JavaScript", "Chrome MV3", "Estatística"],
+      "resultado": "",
+      "contexto": ""
+    }
+  ]
+}
