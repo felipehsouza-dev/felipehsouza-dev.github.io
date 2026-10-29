@@ -298,11 +298,14 @@ def build():
     write(DIST / ".nojekyll", "")
 
     home_url = site_url + "/"
+    home_head = person_jsonld(site, home_url)
+    if site.get("google_site_verification"):
+        home_head += f'\n<meta name="google-site-verification" content="{esc(site["google_site_verification"])}">'
     write(DIST / "index.html", render(
         base, site, root="./", url=home_url,
         title=site["titulo_pagina"], description=site["descricao"],
         main=home_main(site, projetos, "./"),
-        head_extra=person_jsonld(site, home_url),
+        head_extra=home_head,
     ))
 
     urls = [home_url]
